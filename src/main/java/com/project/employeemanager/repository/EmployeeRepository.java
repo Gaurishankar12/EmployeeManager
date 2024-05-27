@@ -7,6 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.project.employeemanager.entity.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee,Long> {
-		public void deleteEmployeeById(long id);
 		public Optional<Employee> findEmployeeById(Long id);
 }
