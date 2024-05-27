@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.project.employeemanager.entity.Employee;
 import com.project.employeemanager.exception.UserNotFoundException;
 import com.project.employeemanager.repository.EmployeeRepository;
 
+@Service
 public class EmployeeServiceImpl implements EmployeeService{
 
 	@Autowired
